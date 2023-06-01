@@ -1,6 +1,4 @@
 import { Component, ViewChild } from '@angular/core';
-import { FormControl } from '@angular/forms';
-import { DateTime } from 'ts-luxon';
 
 @Component({
   selector: 'my-app',

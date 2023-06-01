@@ -6,13 +6,11 @@
     [format]="24"
     [required]="required"
     placeholder="00:00"
-    [formControl]="formControlItem"
   />
 
   <mat-icon
     matSuffix
-    *ngIf="!formControlItem.disabled"
-    (click)="openFromIcon(timepicker)"
+    (click)="timepicker.open()"
     >schedule</mat-icon
   >
 </mat-form-field>
@@ -21,5 +19,3 @@
   #timepicker
   [enableKeyboardInput]="true"
 ></ngx-mat-timepicker>
-
-                    
